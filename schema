@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://github.com/sjc0910/PluginAppExample/blob/main/schema",
+    "title": "Plugin Information",
+    "type": "object",
+    "properties": {
+        "Name": {
+            "type": "string"
+        },
+        "Version": {
+            "type": "string",
+            "pattern": "[0-9](\\.[0-9]){1,3}"
+        },
+        "Description": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "Author": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "License": {
+            "type": "string",
+            "default": "All rights reserved."
+        },
+        "Website": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "PluginType": {
+            "type": "string",
+            "enum": [
+                "CLRPlugin",
+                "CLRLibrary",
+                "UnmanagedDll",
+                "UnmanagedDllLibrary"
+            ]
+        }
+    }
+}
