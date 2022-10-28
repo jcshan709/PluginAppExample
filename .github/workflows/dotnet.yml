@@ -1,6 +1,13 @@
 name: .NET CI
 
-on: [push, pull_request]
+on:
+  push:
+    paths:
+      - "App/**"
+      - "PluginBase/**"
+      - "TestPlugin/**"
+      - ".github/workflows/**.yml"
+      - "PluginAppExample.sln"
 
 jobs:
   build:
