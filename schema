@@ -1,9 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://github.com/sjc0910/PluginAppExample/blob/main/schema",
+    "$id": "https://raw.githubusercontent.com/sjc0910/PluginAppExample/main/schema",
     "title": "Plugin Information",
     "type": "object",
     "properties": {
+        "Assembly": {
+            "type": "string"
+        },
         "Name": {
             "type": "string"
         },

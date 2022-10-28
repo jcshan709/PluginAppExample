@@ -1,0 +1,11 @@
+{
+    "$schema": "https://raw.githubusercontent.com/sjc0910/PluginAppExample/main/schema",
+    "Assembly": "TestPlugin",
+    "Name": "TestPlugin",
+    "Version": "1.0.0",
+    "Author": "sjc0910",
+    "Description": "A plugin for test.",
+    "License": "MIT",
+    "Website": "https://github.com/sjc0910/PluginAppExample",
+    "PluginType": "CLRPlugin"
+}
